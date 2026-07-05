@@ -13,11 +13,11 @@
 # limitations under the License.
 
 substitutions:
-  wifi_ssid: !secret wifi_ssid
-  wifi_password: !secret wifi_password
+  # wifi_ssid: !secret wifi_ssid
+  # wifi_password: !secret wifi_password
   api_key: !secret pv_inverter_api_key
-  ota_password: !secret pv_inverter_ota_password
-  fallback_password: !secret pv_inverter_fallback_password
+  # ota_password: !secret pv_inverter_ota_password
+  # fallback_password: !secret pv_inverter_fallback_password
 
   modbus_inverter_address: "0x01" # Default Modbus address, should be changed to match inverter settings
 
@@ -30,7 +30,7 @@ substitutions:
 
 packages:
   pv_inverter:
-    url: https://github.com/Lewa-Reka/esphome-deye-inverter
+    url: https://github.com/RebelPhoton/esphome-deye-inverter
     refresh: 12h
     files: pv_inverter/deye_hybrid_1p_lv.yaml # SG0XLP1 Low Voltage (1P)
 

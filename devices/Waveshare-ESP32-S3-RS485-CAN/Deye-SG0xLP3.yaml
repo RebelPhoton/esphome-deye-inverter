@@ -15,9 +15,9 @@
 substitutions:
   api_key: ""
   ota_password: " "
-  fallback_password: ""
-  wifi_ssid: ""
-  wifi_password: ""
+  # fallback_password: ""
+  # wifi_ssid: ""
+  # wifi_password: ""
 
   modbus_inverter_address: "0x01" # Default Modbus address, should be changed to match inverter settings
 
@@ -33,7 +33,7 @@ substitutions:
 
 packages:
   pv_inverter:
-    url: https://github.com/Lewa-Reka/esphome-deye-inverter
+    url: https://github.com/RebelPhoton/esphome-deye-inverter
     ref: main
     files: pv_inverter/deye_hybrid_3p_lv.yaml
 
